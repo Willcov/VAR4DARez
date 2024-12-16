@@ -1,0 +1,856 @@
+:root {
+    font-size: 62.5%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    min-height: 100vh; /* Для заполнения экрана */
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 47px 144px;
+    position: fixed; /* Фиксируем header сверху */
+    top: 0; /* Прикрепляем к верхней части */
+    left: 50%; /* Центрируем по горизонтали */
+    transform: translateX(-50%); /* Смещаем влево на половину ширины */
+    z-index: 10; /* Чтобы header был поверх контента */
+    background-color: #121212; /* Задний фон для header */
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+
+.header-logo {
+    width: 230px;
+    height: 77px;
+    object-fit: contain;
+    position: absolute;
+    left: 144px;
+    margin-left: 100px;
+    top: 10%;
+}
+
+.header-button {
+    width: 122px;
+    height: 41px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 140%;
+    cursor: pointer;
+    position: absolute;
+    right: 147px;
+    top: 30%;
+    margin-right: 100px;
+}
+
+.header-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transition: background 0.3s ease;
+}
+
+body {
+    background-color: #121212; /* Для видимости элементов */
+    color: #fff;
+}
+
+.content-1 {
+    width: 1440px;
+    margin: 0 auto; /* Центрируем блок по горизонтали */
+    display: flex;
+    flex-direction: column; /* Включаем вертикальное выравнивание дочерних элементов */
+    align-items: center; /* Центрируем дочерние элементы горизонтально */
+}
+
+.content-1-test {
+    width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 250px; /* Отступ сверху для пространства */
+    align-items: center;
+}
+
+
+/* Левый блок */
+.content-left {
+    padding-left: 50px; /* Отступ для красивого размещения */
+}
+
+.content-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 480%;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    margin-right: 30%;
+    margin-left: 5%;
+}
+
+.content-button {
+    width: 342px;
+    height: 55px;
+    background: #FA0369;
+    border: none;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 160%;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-left: 5%;
+}
+
+.content-button:hover {
+    background: #E0025F;
+    transition: background 0.3s ease;
+}
+
+.content-subtext {
+    font-size: 130%;
+    color: #7E8597;
+    margin-left: 10%;
+}
+
+/* Правый блок */
+.content-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+}
+
+.main-image {
+    width: 560px;
+    height: 560px;
+    background: linear-gradient(180deg, #432371 0%, #FAAE7B 100%);
+    border-radius: 24px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-image {
+    width: 377px;
+    height: 651px;
+    object-fit: contain;
+    position: absolute;
+}
+
+/* Блок с изображениями */
+.image-row {
+    height: 220px;
+    margin: 90px auto; /* Отступы сверху и снизу, центрирование блока */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent; /* Фон блока, если требуется */
+}
+
+/* Общие стили для изображений */
+.image {
+    height: 40px; /* Общая высота для всех изображений */
+    object-fit: contain; /* Сохраняем пропорции изображений */
+}
+
+/* Уникальные размеры для каждого изображения */
+.image-1 {
+    width: 277px;
+    padding: 25px;
+}
+
+.image-2 {
+    width: 202px;
+    padding: 25px;
+}
+
+.image-3 {
+    width: 209px;
+    padding: 25px;
+}
+
+.image-4 {
+    width: 307px;
+    padding: 25px;
+}
+
+/* Стили для блока START IN SECOND */
+    .start-section {
+      width: 1440px;
+      height: 595px;
+      padding: 50px;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    /* Стили для первого P тега */
+    .start-section__text-primary {
+      font-family: 'DM Sans', sans-serif;
+      font-style: normal;
+      font-size: 160%;
+      color: #FA0369;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      padding: 10px 20px;
+      margin-bottom: 0px;
+    }
+
+    /* Стили для второго P тега */
+    .start-section__text-secondary {
+      font-family: 'DM Sans', sans-serif;
+      font-style: normal;
+      font-size: 420%;
+      color: #FFFFFF;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      padding: 20px 40px;
+      margin-bottom: 40px;
+      margin-top: 0px;
+      border-radius: 8px;
+    }
+
+    /* Стили для контейнера карточек */
+    .cards {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    /* Стили для каждой карточки */
+    .card {
+      width: 264px;
+      height: 262px;
+      background: #141A25;
+      border-radius: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .card svg {
+      width: 48px;
+      height: 48px;
+            display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    /* Стили для кнопок в карточках */
+    .card button {
+      width: 67px;
+      height: 28px;
+      background: #FA0369;
+      border: none;
+      border-radius: 63px;
+      color: #ffffff;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 140%;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      transition: background-color 0.3s;
+    }
+
+    .card button:hover {
+      background-color: #c00156;
+    }
+
+    /* Стили для текста в карточках */
+    .card__text {
+      font-family: 'DM Sans', sans-serif;
+      font-style: normal;
+      font-size: 180%;
+      color: #7E8597;
+      text-align: center;
+    }
+
+    /* Адаптивность */
+    @media (max-width: 1440px) {
+      .start-section {
+        width: 100%;
+        height: auto;
+        padding: 30px;
+      }
+
+      .cards {
+        gap: 20px;
+      }
+
+      .card {
+        width: 100%;
+        max-width: 264px;
+        height: auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    /* Основной контейнер */
+/* Основной контейнер */
+.block-1 {
+    width: 1440px;
+    height: 902px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Текст */
+.block-text {
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-size: 420%;
+    color: #FFFFFF;
+    margin-bottom: 100px; /* Отступ от текста до подблоков */
+}
+
+/* Контейнер для подблоков */
+.block-content {
+    display: flex;
+    flex-direction: row; /* Расположение подблоков в строчку */
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Расстояние между подблоками */
+}
+
+/* Первый подблок с внешним изображением */
+.sub-block.image-block .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 558px;
+    height: 530px;
+    background: linear-gradient(180deg, #432371 0%, #FAAE7B 100%);
+    border-radius: 24px;
+}
+
+/* Вложенное изображение */
+.image-container .inner-image {
+    width: 381px;
+    height: 607px;
+    filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0.1));
+    border-radius: 16px 16px 0px 0px;
+}
+
+/* Второй подблок */
+.sub-block.text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 500px;
+    margin-left: 100px;
+}
+
+/* Первый текст */
+.text-block .primary-text {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-size: 360%;
+    color: #FFFFFF;
+    margin-bottom: 10px; /* Отступ между текстами */
+}
+
+/* Второй текст */
+.text-block .secondary-text {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-size: 210%;
+    color: #7E8597;
+    margin-bottom: 20px; /* Отступ между текстом и кнопкой */
+}
+
+/* Кнопка */
+.text-block .cta-button {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 180%; /* Размер текста для кнопки */
+    color: #FFFFFF;
+    width: 342px;
+    height: 55px;
+    background: #FA0369;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-button:hover {
+    background: #E0025F;
+    transition: background 0.3s ease;
+}
+.cta-button-block-3:hover {
+    background: #E0025F;
+    transition: background 0.3s ease;
+}
+.cta-button-container-2:hover {
+    background: #E0025F;
+    transition: background 0.3s ease;
+}
+
+/* Основной блок */
+.block-2 {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row; /* Подблоки идут друг за другом */
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* Отступ между подблоками */
+    margin-top: 150px;
+}
+
+/* Первый подблок */
+.text-and-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px; /* Расстояние между элементами */
+    width: 500px;
+}
+
+/* Текст первый */
+.primary-text {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-size: 420%;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+/* Текст второй */
+.secondary-text {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-size: 210%;
+    color: #7E8597;
+    margin: 0;
+}
+
+.secondary-text2 {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-size: 210%;
+    color: #7E8597;
+    margin: 0;
+    margin-bottom: 10%;
+}
+
+/* Карточки */
+.cards {
+    display: flex;
+    flex-direction: row; /* Карточки в одну строку */
+    margin-bottom: 30px;
+}
+
+.card-block-2 {
+    width: 185px;
+    height: 90px;
+    border-radius: 16px;
+    padding: 10px;
+}
+
+.card-image {
+    object-fit: cover;
+    border-radius: 12px;
+    margin-right: 10px;
+}
+
+.card-text {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-size: 200%;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+/* Кнопка */
+.cta-button {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 180%;
+    color: #FFFFFF;
+    width: 342px;
+    height: 55px;
+    background: #FA0369;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Второй подблок */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container-1 {
+    width: 558px;
+    height: 558px;
+    background: linear-gradient(180deg, #432371 0%, #FAAE7B 100%);
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-image {
+    width: 429.16px;
+    height: 659px;
+    object-fit: cover;
+    border-radius: 16px;
+    filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0.1));
+}
+
+
+
+
+/* Основной блок */
+.block-3 {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row; /* Подблоки идут в строчку */
+    align-items: center; /* Центрирование по вертикали */
+    margin-top: 150px;
+}
+
+/* Первый подблок */
+.image-container-block-3 {
+    width: 558px;
+    height: 558px;
+    background: linear-gradient(180deg, #432371 0%, #FAAE7B 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Центрирование изображения */
+    border-radius: 360px;
+    margin-right: 250px;
+}
+
+.block-image {
+    width: 388px;
+    height: 603px;
+    object-fit: cover; /* Убедитесь, что изображение правильно масштабируется */
+}
+
+/* Второй подблок */
+.text-and-button-block-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px; /* Отступы между текстами и кнопкой */
+    width: 450px;
+    transform: translate(-100px, 10px);
+}
+
+/* Текст первый */
+.primary-text-block-3 {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-size: 360%;
+    color: #FFFFFF;
+}
+
+/* Текст второй */
+.secondary-text-block-3 {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-size: 210%;
+    color: #7E8597;
+}
+
+/* Кнопка */
+.cta-button-block-3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 180%;
+    color: #FFFFFF;
+    width: 342px;
+    height: 55px;
+    background: #FA0369;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content-2 {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content-2 {
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+/* Основной блок */
+.block-1-container-2 {
+    width: 1146px;
+    height: 496px;
+    background-color: #141A25; /* Задний фон */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row; /* Подблоки идут в строку */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; /* Внутренние отступы */
+    box-sizing: border-box; /* Учитывать padding в размерах */
+    border-radius: 24px;
+    margin-top: 250px;
+    margin-bottom: 250px;
+}
+
+/* Первый подблок */
+.text-and-button-container-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px; /* Расстояние между элементами */
+    margin-left: 120px;
+}
+
+/* Первый текст */
+.primary-text-container-2 {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-size: 420%;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+/* Второй текст */
+.secondary-text-container-2 {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-size: 180%;
+    color: #FFFFFF;
+    width: 370px;
+}
+
+/* Кнопка */
+.cta-button-container-2 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 180%;
+    color: #FFFFFF;
+    width: 363px;
+    height: 55px;
+    background: #FA0369;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Второй подблок */
+.image-block-container-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container-container-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-image-container-2 {
+    width: 354px;
+    height: 584px;
+    object-fit: cover; /* Масштабировать изображение */
+    border-radius: 8px; /* Если нужно закругление */
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.2); /* Тень для изображения */
+    transform: translate(-90px, -50px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Основной блок */
+.block-last {
+    width: 1146px;
+    height: 527px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row; /* Подблоки идут в строку */
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; /* Расстояние между подблоками */
+    margin-bottom: 250px;
+}
+
+/* Первый подблок */
+.text-block-last {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px; /* Расстояние между текстами */
+}
+
+/* Текст 1 */
+.primary-text-last {
+    width: 460px;
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-size: 420%;
+    color: #1A1A1A;
+}
+
+/* Текст 2 */
+.secondary-text-last {
+    width: 460px;
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-size: 210%;
+    color: #7E8597;
+}
+
+/* Второй подблок */
+.image-block-last {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-image-last {
+    width: 558px;
+    height: 530px;
+    object-fit: cover; /* Масштабирование изображения */
+    border-radius: 12px; /* Если нужно закругление */
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.2); /* Тень для изображения */
+}
+
+
+
+/* Подвал */
+footer {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box; /* Учитывать отступы в размерах */
+    background-color: white;
+}
+
+/* Линия */
+footer hr {
+    width: 100%;
+    height: 1px;
+    background-color: #000; /* Чёрная линия */
+    border: none;
+    margin: 0 0 20px 0; /* Отступ снизу */
+}
+
+/* Текст */
+footer p {
+    font-style: normal;
+    font-size: 140%;
+    color: rgba(26, 26, 26, 0.56);
+    align-self: flex-start; /* Выравнивание по левому краю */
+    margin: 0; /* Убрать стандартные отступы */
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+/* Изображения */
+footer img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px; /* Расстояние между изображениями */
+}
+
+footer .social-icons {
+    display: flex;
+    align-self: flex-end; /* Выравнивание по правому краю */
+    gap: 10px; /* Отступ между иконками */
+    margin: 0;
+    transform: translate(-250px, -45px);
+}
+
+.footer-block {
+    width: 1440px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
